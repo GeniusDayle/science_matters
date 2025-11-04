@@ -20,9 +20,10 @@ body {
 
 header {
     grid-area: head;
-    background-image: url(./Images/science-matters-banner.jpg);
+    background-image: url(./Images/sciences-matter-banner-mobile.png);
     background-size: cover;
-    height: 400px;
+    background-position: center calc(50% + 2rem);
+    height: 300px;
 }
 
 h1 {
@@ -36,23 +37,23 @@ h1 {
     position: fixed;
     top: 0;
     width: 100%;
-    height: 2.5rem;
+    height: 4rem;
     padding: 0 10px 0 0;
-    background: rgb(62, 62, 150);
+    background: #283593;
 }
 
 button {
     border: none;
     border-radius: 5px;
-    background: rgb(62, 62, 150);
+    background: #283593;
     color: whitesmoke;
-    font-size: 1rem;
+    font-size: 1.3rem;
     cursor: pointer;
     transition: ease-in-out 0.3s;
 }
 
 .light-btn {
-    text-shadow: 0 0 10px #00f7ff, 0 0 20px #00f7ff;
+    text-shadow: 0 0 10px #fbd116, 0 0 20px #fbd116;
 }
 
 .hamburger-menu {
@@ -89,7 +90,7 @@ main {
 
 footer {
     grid-area: foot;
-    background: rgb(62, 62, 150);
+    background: #283593;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -115,9 +116,18 @@ footer p {
             "foot foot";
     }
 
+    header {
+        background-image: url(./Images/sciences-matter-banner-tablet.png);
+        background-position: center;
+    }
+
+    .btn-bar {
+        display: none;
+    }
+
     nav {
         display: flex;
-        background: rgb(62, 62, 150);
+        background: #283593;
     }
 
     .hamburger-menu {
@@ -126,5 +136,18 @@ footer p {
 
     .menu-btn {
         display: none;
+    }
+}
+
+@media (min-width:1024px) {
+    header {
+        background-image: url(./Images/sciences-matter-banner-1024px.png);
+    }
+}
+
+@media (min-width:1280px) {
+    header {
+        background-image: url(./Images/sciences-matter-banner-1280px.png);
+        height: 500px;
     }
 }

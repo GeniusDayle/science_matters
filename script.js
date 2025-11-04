@@ -11,7 +11,7 @@
     lightBtn.addEventListener('click', () => {
         body.style.color = '#343a40';
         body.style.background = 'whitesmoke';
-        lightBtn.style.textShadow = '0 0 10px #00f7ff, 0 0 20px #00f7ff';
+        lightBtn.style.textShadow = '0 0 10px #fbd116, 0 0 20px #fbd116';
         darkBtn.style.textShadow = 'none';
         menuItems.forEach(item => item.style.color = 'whitesmoke');
         navMenu.style.background = '#343a40';
@@ -23,7 +23,7 @@
         body.style.color = 'whitesmoke';
         body.style.background = '#343a40';
         lightBtn.style.textShadow = 'none';
-        darkBtn.style.textShadow = '0 0 10px #00f7ff, 0 0 20px #00f7ff';
+        darkBtn.style.textShadow = '0 0 10px #fbd116, 0 0 20px #fbd116';
         navMenu.style.background = 'whitesmoke';
         menuItems.forEach(item => item.style.color = '#343a40');
         menuItems.forEach(item => item.style.fontWeight = '600');
@@ -57,7 +57,7 @@
             navMenu.style.transform = 'translate(-50%, -50%)';
             navMenu.style.zIndex = '1';
             navMenu.style.height = 'fit-content';
-            navMenu.style.border = '4px solid rgb(62, 62, 150)';
+            navMenu.style.border = '4px solid #ce1126';
             navMenu.style.borderRadius = '10px';
         } else {
             navMenu.style.display = 'none';
