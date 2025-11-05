@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     box-sizing: border-box;
     display: grid;
     grid-template-columns: 1fr;
@@ -10,12 +10,11 @@ body {
     grid-template-areas: 
         "head"
         "main"
-        "main"
-        "main"
         "foot";
     background: whitesmoke;
     color: #343a40;
     font-family: "Montserrat", sans-serif;
+    line-height: 1.5rem;
 }
 
 header {
@@ -28,6 +27,12 @@ header {
 
 h1 {
     text-align: center;
+    text-transform: uppercase;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.2rem;
 }
 
 .btn-bar {
@@ -40,6 +45,7 @@ h1 {
     height: 4rem;
     padding: 0 10px 0 0;
     background: #283593;
+    z-index: 1000;
 }
 
 button {
@@ -86,6 +92,28 @@ nav li a, .hamburger-menu li a {
 
 main {
     grid-area: main;
+    width: 85%;
+    margin: 0 auto;
+    height: auto;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.about-us-grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.objectives ul {
+    padding: 1rem;
+}
+
+.objectives li {
+    gap: 0.5rem;
+}
+
+.about-us-grid img {
+    max-width: 100%;
 }
 
 footer {
@@ -111,18 +139,12 @@ footer p {
         grid-template-areas: 
             "head head"
             "menu main"
-            "menu main"
-            "menu main"
             "foot foot";
     }
 
     header {
         background-image: url(./Images/sciences-matter-banner-tablet.png);
         background-position: center;
-    }
-
-    .btn-bar {
-        display: none;
     }
 
     nav {
@@ -137,6 +159,10 @@ footer p {
     .menu-btn {
         display: none;
     }
+
+    main {
+        width: 75%;
+    }
 }
 
 @media (min-width:1024px) {
@@ -144,6 +170,36 @@ footer p {
         background-image: url(./Images/sciences-matter-banner-1024px.png);
         height: 400px;
     }
+
+    body {
+        line-height: 2rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    li {
+        font-size: 1.2rem;
+    }
+
+    main {
+        width: 80%;
+    }
+
+    .about-us-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+
 }
 
 @media (min-width:1280px) {
