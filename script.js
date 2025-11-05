@@ -1,40 +1,44 @@
 // Light and Dark Mode ------------------------------------------------------------------
 
     // Toggle Light and Dark Mode
-    const lightBtn = document.getElementById('light-btn');
-    const darkBtn = document.getElementById('dark-btn');
+    const lightBtn = document.querySelectorAll('.light-btn');
+    const darkBtn = document.querySelectorAll('.dark-btn');
     const body = document.getElementById('body');
     const navMenu = document.getElementById('hamburger-menu');
     const menuItems = navMenu.querySelectorAll('a');
     const savedTheme = localStorage.getItem('theme');
-
-    lightBtn.addEventListener('click', () => {
+    
+    lightBtn.forEach(btn => {
+    btn.addEventListener('click', () => {
         body.style.color = '#343a40';
         body.style.background = 'whitesmoke';
-        lightBtn.style.textShadow = '0 0 10px #fbd116, 0 0 20px #fbd116';
-        darkBtn.style.textShadow = 'none';
+        lightBtn.forEach(b => b.style.textShadow = '0 0 10px #fbd116, 0 0 20px #fbd116');
+        darkBtn.forEach(b => b.style.textShadow = 'none');
         menuItems.forEach(item => item.style.color = 'whitesmoke');
         navMenu.style.background = '#343a40';
         menuItems.forEach(item => item.style.fontWeight = '500');
         localStorage.setItem('theme', 'light');
-    })
+    });
+    });
 
-    darkBtn.addEventListener('click', () => {
+    darkBtn.forEach(btn => {
+    btn.addEventListener('click', () => {
         body.style.color = 'whitesmoke';
         body.style.background = '#343a40';
-        lightBtn.style.textShadow = 'none';
-        darkBtn.style.textShadow = '0 0 10px #fbd116, 0 0 20px #fbd116';
-        navMenu.style.background = 'whitesmoke';
+        darkBtn.forEach(b => b.style.textShadow = '0 0 10px #fbd116, 0 0 20px #fbd116');
+        lightBtn.forEach(b => b.style.textShadow = 'none');
         menuItems.forEach(item => item.style.color = '#343a40');
+        navMenu.style.background = 'whitesmoke';
         menuItems.forEach(item => item.style.fontWeight = '600');
         localStorage.setItem('theme', 'dark');
-    })
+    });
+    });
 
     // Mode Choice Saved
     if (savedTheme === 'light') {
-        lightBtn.click();
-    } else if (savedTheme === 'dark') {
-        darkBtn.click();
+        lightBtn.forEach(btn => btn.click());
+        } else if (savedTheme === 'dark') {
+        darkBtn.forEach(btn => btn.click());
     }
 
 // Hamburger Menu ----------------------------------------------------------------------
@@ -80,7 +84,12 @@
     })
     
     document.addEventListener('click', (e) => {
-        if (!navMenu.contains(e.target) && !menuBtn.contains(e.target) && !lightBtn.contains(e.target) & !darkBtn.contains(e.target)) {
+        const clickedInsideMenu = navMenu.contains(e.target);
+        const clickedMenuBtn = menuBtn.contains(e.target);
+        const clickedLightBtn = [...lightBtn].some(btn => btn.contains(e.target));
+        const clickedDarkBtn = [...darkBtn].some(btn => btn.contains(e.target));
+
+        if (!clickedInsideMenu && !clickedMenuBtn && !clickedLightBtn && !clickedDarkBtn) {
             navMenu.style.display = 'none';
         }
     });

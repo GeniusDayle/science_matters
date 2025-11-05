@@ -16,10 +16,10 @@
     <header>
         <div class="btn-bar" id="btn-bar">
             <div>
-                <button class="light-btn" id="light-btn">
+                <button class="light-btn">
                     <i class="fi fi-sr-brightness"></i>
                 </button>
-                <button class="dark-btn" id="dark-btn">
+                <button class="dark-btn">
                     <i class="fi fi-sc-moon"></i>
                 </button>
             </div>
@@ -30,17 +30,27 @@
     </header>
     <nav class="nav-menu" id="nav-menu">
         <div class="side-menu" id="side-menu">
-            <ul>
-                <li>
-                    <a href="#">About Us</a>
-                </li>
-                <li>
-                    <a href="#">Our Team</a>
-                </li>
-                <li>
-                    <a href="#">Donate</a>
-                </li>
-            </ul>
+            <div class="side-menu-mode" id="side-menu-mode">
+                <button class="light-btn" id="light-btn">
+                    <i class="fi fi-sr-brightness"></i>
+                </button>
+                <button class="dark-btn" id="dark-btn">
+                    <i class="fi fi-sc-moon"></i>
+                </button>
+            </div>
+            <div class="side-menu-items">
+                <ul>
+                    <li>
+                        <a href="#">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#">Our Team</a>
+                    </li>
+                    <li>
+                        <a href="#">Donate</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
     <div class="hamburger-menu" id="hamburger-menu">
@@ -115,7 +125,7 @@
         </section>
     </main>
     <footer>
-        <p>&copy; Science Matters</p>
+        <p>&copy; Sciences Matter</p>
         <p>Phone</p>
         <p>Email</p>
         <p>Dayle Cranfield</p>
