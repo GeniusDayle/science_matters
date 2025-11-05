@@ -59,6 +59,12 @@ button {
     transition: ease-in-out 0.3s;
 }
 
+.mode {
+    display: flex;
+    justify-content: space-between;
+    width: 4.5em;
+}
+
 .light-btn {
     text-shadow: 0 0 10px #fbd116, 0 0 20px #fbd116;
 }
@@ -98,8 +104,9 @@ button {
     padding: 0;
     text-align: center;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    width: 4.5rem;
 }
 
 .hamburger-menu {
@@ -150,6 +157,11 @@ main {
 
 .about-us-grid img {
     max-width: 100%;
+}
+
+.vision p, .mission p, .objectives p {
+    padding-left: 2rem;
+    border-left: 4px solid #fbd116;
 }
 
 footer {
