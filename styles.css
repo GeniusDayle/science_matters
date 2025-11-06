@@ -23,6 +23,22 @@ header {
     background-size: cover;
     background-position: center calc(50% + 2rem);
     height: 300px;
+    display: flex;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin: 4rem auto 0 auto;
+}
+
+.logo img {
+    margin: 2rem;
+    height: 150px;
+    width: 150px;
+    border-radius: 0.5rem;
+    background: rgba(245, 245, 245, 0.4);
 }
 
 h1 {
@@ -196,6 +212,15 @@ footer p {
         background-position: center;
     }
 
+     .logo {
+        margin-top: 0;
+    }
+
+    .logo img {
+        width: 200px;
+        height: 200px;
+    }
+
     .btn-bar {
         display: none;
     }
@@ -233,6 +258,11 @@ footer p {
         height: 400px;
     }
 
+    .logo img {
+        width: 250px;
+        height: 250px;
+    }
+
     body {
         line-height: 2rem;
     }
@@ -268,5 +298,10 @@ footer p {
     header {
         background-image: url(./Images/sciences-matter-banner-1280px.png);
         height: 500px;
+    }
+
+    .logo img {
+        width: 300px;
+        height: 300px;
     }
 }
