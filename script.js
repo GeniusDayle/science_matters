@@ -16,6 +16,7 @@
         darkBtn.forEach(b => b.style.textShadow = 'none');
         menuItems.forEach(item => item.style.color = 'whitesmoke');
         navMenu.style.background = '#343a40';
+        navMenu.style.boxShadow = '0 8px 24px rgba(0, 0, 0, 0.65)';
         menuItems.forEach(item => item.style.fontWeight = '500');
         localStorage.setItem('theme', 'light');
     });
@@ -29,6 +30,7 @@
         lightBtn.forEach(b => b.style.textShadow = 'none');
         menuItems.forEach(item => item.style.color = '#343a40');
         navMenu.style.background = 'whitesmoke';
+        navMenu.style.boxShadow = '0 8px 24px rgba(0, 0, 0, 0.65)';
         menuItems.forEach(item => item.style.fontWeight = '600');
         localStorage.setItem('theme', 'dark');
     });

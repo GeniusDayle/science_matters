@@ -27,6 +27,13 @@ section {
     scroll-margin-top: 4rem;
 }
 
+.divider {
+    border-bottom: 4px solid #ce1126;
+    width: 70%;
+    height: 2rem;
+    margin: 1rem auto 0 auto;
+}
+
 header {
     grid-area: head;
     background-image: url(./Images/sciences-matter-banner-mobile.png);
@@ -208,7 +215,12 @@ main {
 
 .team-member p {
     padding-left: 2rem;
+    margin-bottom: 0;
     border-left: 4px solid #fbd116;
+}
+
+.school-details img {
+    margin-top: 1rem;
 }
 
 .school-details p {
@@ -356,6 +368,10 @@ footer p {
     header {
         background-image: url(./Images/sciences-matter-banner-1280px.png);
         height: 500px;
+    }
+
+    main {
+        width: 70%;
     }
 
     .logo img {
