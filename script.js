@@ -61,7 +61,7 @@
             navMenu.style.transform = 'translate(-50%, -50%)';
             navMenu.style.zIndex = '1';
             navMenu.style.height = 'fit-content';
-            navMenu.style.border = '4px solid #ce1126';
+            
             navMenu.style.borderRadius = '10px';
         } else {
             navMenu.style.display = 'none';
@@ -94,4 +94,14 @@
         }
     });
 
-// ---------------------------------------------------------------------------------------
+// Picture Slideshow --------------------------------------------------------------------
+
+    const images = ["./Images/vision.jpg", "./Images/mission.jpg", "./Images/objectives.jpg"];
+    let index = 0;
+
+    setInterval(() => {
+        index = (index +1) % images.length;
+        document.getElementById("slide-show").src  = images[index];
+    }, 3000);
+
+//----------------------------------------------------------------------------------------
