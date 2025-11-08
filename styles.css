@@ -129,6 +129,7 @@
         position: absolute;
         box-sizing: border-box;
         object-fit: cover;
+        object-position: bottom;
         top: 0;
         left: 0;
         width: 100%;
@@ -159,11 +160,12 @@
         /*---------------------------------*/ 
 
         /* Color Settings */
-        background: rgba(245, 245, 245, 0.4);
+        background: rgba(245, 245, 245, 0.6);
         /*---------------------------------*/ 
 
         /* Border Settings */
         border-radius: 0.5rem;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.75);
         /*---------------------------------*/ 
 
     }
@@ -642,6 +644,10 @@
         height: 400px;
     }
 
+    .background-vid {
+        object-position: center calc(100% + 4rem);
+    }
+
     .logo img {
         width: 250px;
         height: 250px;
@@ -690,6 +696,10 @@
         height: 500px;
     }
 
+    .background-vid {
+        object-position: center calc(100% + 8rem);
+    }
+
     main {
         width: 70%;
     }
@@ -697,5 +707,11 @@
     .logo img {
         width: 300px;
         height: 300px;
+    }
+}
+
+@media (min-width:1500px) {
+    .background-vid {
+        object-position: center calc(100% +16rem)
     }
 }
