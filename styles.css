@@ -98,7 +98,13 @@
 
         /* Layout Settings */
         display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
         height: 300px;
+        margin: 4rem 0 0 0;
         /*---------------------------------*/ 
 
         /* Grid Settings */
@@ -106,7 +112,7 @@
         /*---------------------------------*/ 
 
         /* Background Image Settings */
-        background-image: url(./Images/sciences-matter-banner-mobile.png);
+        /* background: url(./Images/sciences-matter-banner-mobile.webp);
         background-size: cover;
         background-position: center calc(50% + 2rem);
         /*---------------------------------*/ 
@@ -117,6 +123,20 @@
 
     }
 
+    .background-vid {
+
+        /* Layout Settings */
+        position: absolute;
+        box-sizing: border-box;
+        object-fit: cover;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 500;
+        /*---------------------------------*/ 
+    }
+
     /* Header Logo */
 
     .logo {
@@ -125,7 +145,6 @@
         display: flex;
         justify-content: center;
         align-self: center;
-        margin: 4rem auto 0 auto;
         /*---------------------------------*/ 
 
     }
@@ -133,9 +152,10 @@
     .logo img {
 
         /* Layout Settings */
+        position: relative;
         height: 150px;
         width: 150px;
-        margin: 2rem;
+        z-index: 1000;
         /*---------------------------------*/ 
 
         /* Color Settings */
@@ -162,8 +182,10 @@
         width: 100%;
         position: fixed;
         top: 0;
-        z-index: 1000;
+        left: 0;
+        z-index: 1500;
         height: 4rem;
+        margin: 0;
         padding: 0 1rem;
         /*---------------------------------*/ 
         
@@ -570,9 +592,10 @@
     header {
         background-image: url(./Images/sciences-matter-banner-tablet.png);
         background-position: center;
+        margin: 0;
     }
 
-     .logo {
+    .logo {
         margin-top: 0;
     }
 
