@@ -63,9 +63,8 @@
             navMenu.style.top = '50%';
             navMenu.style.left = '50%';
             navMenu.style.transform = 'translate(-50%, -50%)';
-            navMenu.style.zIndex = '1';
+            navMenu.style.zIndex = '2000';
             navMenu.style.height = 'fit-content';
-            
             navMenu.style.borderRadius = '10px';
         } else {
             navMenu.style.display = 'none';
