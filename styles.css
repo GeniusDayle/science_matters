@@ -462,7 +462,7 @@
 
     }
 
-    .team-member img:hover {
+    .team-member img:hover, .team-member img:active {
         
         /* Color Settings */
         background: #d3d3d3;
@@ -561,7 +561,7 @@
 
     }
 
-    .donate-btn:hover {
+    .donate-btn:hover, .donate-btn:active {
 
         /* Color Settings */
         background: #134611;
