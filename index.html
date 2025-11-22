@@ -17,36 +17,39 @@
     <header>
         <div class="btn-bar" id="btn-bar">
             <div class="mode">
-                <button class="light-btn">
+                <button class="light-btn" aria-label="Switch to light mode.">
                     <i class="fi fi-sr-brightness"></i>
                 </button>
-                <button class="dark-btn">
+                <button class="dark-btn" aria-label="Switch to dark mode.">
                     <i class="fi fi-sc-moon"></i>
                 </button>
             </div>
-            <button class="menu-btn" id="menu-btn">
+            <button class="menu-btn" id="menu-btn" aria-label="Toggle navigation menu on phones.">
                 <i class="fi fi-br-menu-burger"></i>
             </button>
         </div>
         <div class="logo" id="logo">
-            <img src="./Images/Science Matters logo.png" alt="Logo of Sciences Matter.">
+            <img src="./Images/sciences-matter-logo-glow.png" alt="Logo of Sciences Matter.">
         </div>
         <video autoplay muted loop playsinline class="background-vid" id="background-vid">
-            <source src="./Images/sciences-matter-banner-mobile.mp4" type="video/mp4">
+            <source src="./Images/sciences-matter-banner-mobile.mp4" type="video/mp4" aria-hidden="true">
         </video>
     </header>
     <nav class="nav-menu" id="nav-menu">
         <div class="side-menu" id="side-menu">
             <div class="side-menu-mode" id="side-menu-mode">
-                <button class="light-btn" id="light-btn">
+                <button class="light-btn" aria-label="Switch to light mode.">
                     <i class="fi fi-sr-brightness"></i>
                 </button>
-                <button class="dark-btn" id="dark-btn">
+                <button class="dark-btn" aria-label="Switch to dark mode.">
                     <i class="fi fi-sc-moon"></i>
                 </button>
             </div>
             <div class="side-menu-items">
                 <ul>
+                    <li class="social-media-updates">
+                        <a href="#social-media-updates">Recent Updates</a>
+                    </li>
                     <li>
                         <a href="#about-us">About Us</a>
                     </li>
@@ -63,8 +66,13 @@
             </div>
         </div>
     </nav>
+    <div class="hamburger-menu-backdrop" role="presentation" aria-hidden="true"></div>
     <div class="hamburger-menu" id="hamburger-menu">
+        <button class="menu-close close-btn" aria-label="Close menu.">&times;</button>
         <ul>
+            <li class="social-media-updates">
+                <a href="#social-media-updates">Recent Updates</a>
+            </li>
             <li>
                 <a href="#about-us">About Us</a>
             </li>
@@ -80,6 +88,12 @@
         </ul>
     </div>
     <main>
+        <section class="social-media-updates" id="social-media-updates">
+            <h1>Recent Updates</h1>
+            <div class="posts" id="posts">
+            </div>
+        </section>
+        <div class="divider social-media-updates" role="presentation" aria-hidden="true"></div>
         <section class="about-us" id="about-us">
             <h1>About Us</h1>
             <div class="about-us-grid" id="about-us-grid">
@@ -135,41 +149,51 @@
                 </div>
             </div>
         </section>
-        <div class="divider" id="divider"></div>
+        <div class="divider" role="presentation" aria-hidden="true"></div>
         <section class="team" id="team">
-            <h1>Our Team</h1>
+            <h1>Our Team <br><span class="info">Click the profile pictures for more info!</span></h1>
             <div class="team-grid" id="team-grid">
-                <div class="team-member" id="team-member">
+                <div class="team-member" tabindex="0" data-img="./Images/corvell-cranfield.png">
                     <h2>Corvell Cranfield</h2>
                     <h3>Education Coordinator</h3>
                     <img src="./Images/corvell-cranfield.png" alt="" class="team-img">
-                    <p>Ipsom Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    <p>1Ipsom Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                         Minima autem temporibus!</p>
                 </div>
-                <div class="team-member" id="team-member">
+                <div class="team-member" tabindex="0" data-img="./Images/corvell-cranfield.png">
                     <h2>Corvell Cranfield</h2>
                     <h3>Education Coordinator</h3>
                     <img src="./Images/corvell-cranfield.png" alt="" class="team-img">
-                    <p>Ipsom Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    <p>2Ipsom Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                         Minima autem temporibus!</p>
                 </div>
-                <div class="team-member" id="team-member">
+                <div class="team-member" tabindex="0" data-img="./Images/corvell-cranfield.png">
                     <h2>Corvell Cranfield</h2>
                     <h3>Education Coordinator</h3>
                     <img src="./Images/corvell-cranfield.png" alt="" class="team-img">
-                    <p>Ipsom Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    <p>3Ipsom Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                         Minima autem temporibus!</p>
                 </div>
-                <div class="team-member" id="team-member">
+                <div class="team-member" tabindex="0" data-img="./Images/corvell-cranfield.png">
                     <h2>Corvell Cranfield</h2>
                     <h3>Education Coordinator</h3>
                     <img src="./Images/corvell-cranfield.png" alt="" class="team-img">
-                    <p>Ipsom Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    <p>4Ipsom Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                         Minima autem temporibus!</p>
                 </div>
             </div>
+            <div class="modal" role="dialog" aria-modal="true" tabindex="-1">
+                <div class="modal-backdrop" role="presentation"></div>
+                <div class="modal-content" role="document">
+                    <button class="modal-close close-btn" aria-label="Close modal.">&times;</button>
+                    <h2 class="modal-name"></h2>
+                    <h3 class="modal-role"></h3>
+                    <img class="modal-img" alt="Team member photo" />
+                    <p class="modal-blurb"></p>
+                </div>
+            </div>
         </section>
-        <div class="divider" id="divider"></div>
+        <div class="divider" role="presentation" aria-hidden="true"></div>
         <section class="pilot-school" id="pilot-school">
             <h1>Our Pilot School</h1>
             <div class="school-details" id="school-details">
@@ -181,7 +205,7 @@
                     magnam sequi porro ex quo ullam.</p>
             </div>
         </section>
-        <div class="divider" id="divider"></div>
+        <div class="divider" role="presentation" aria-hidden="true"></div>
         <section class="donate" id="donate">
             <h1>Donate</h1>
             <div class="donate-info" id="donate-info">
@@ -196,7 +220,9 @@
                     creating healthier, stronger communities.<br><br>
                     <strong>Thank you for helping make science education matter.</strong>
                 </p>
-                <button class="donate-btn" id="donate-btn">Donate</button>
+                <button class="donate-btn" id="donate-btn" aria-label="Donate to Sciences Matter." type="button">
+                    Donate
+                </button>
             </div>
         </section>
     </main>
