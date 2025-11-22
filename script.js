@@ -188,30 +188,30 @@
 
     const posts = document.getElementById('posts');
 
-fetch(`https://graph.facebook.com/v17.0/1950244881867683/media?fields=id,caption,media_url,timestamp&access_token=EAAS42fdpZBZB8BP0BSJRiGJgxbCNVxW0G9WT1ypIxVTE9g4E04p2Mlm7DKRQYcc9YYIDw9RboTekmrXor70MSYS0mDKGbh2FjN63rLZAmU9ZAbevAddst95iEPMPCyR2ZB8dqanHWP5lFe7F2sBEj1ysORamZActt0PbVD4lQsEdqYr58aIDXH03nRXN6wRZCjKM9eFvNlK0inIk0zSr4ZAU5gE7We9anJPN2qqU4E1GjNzswpxk1H0yGpsZD`)
-    .then(res => res.json())
-    .then(data => {
+//fetch(`https://graph.facebook.com/v17.0/1950244881867683/media?fields=id,caption,media_url,timestamp&access_token=EAAS42fdpZBZB8BP0BSJRiGJgxbCNVxW0G9WT1ypIxVTE9g4E04p2Mlm7DKRQYcc9YYIDw9RboTekmrXor70MSYS0mDKGbh2FjN63rLZAmU9ZAbevAddst95iEPMPCyR2ZB8dqanHWP5lFe7F2sBEj1ysORamZActt0PbVD4lQsEdqYr58aIDXH03nRXN6wRZCjKM9eFvNlK0inIk0zSr4ZAU5gE7We9anJPN2qqU4E1GjNzswpxk1H0yGpsZD`)
+//    .then(res => res.json())
+//    .then(data => {
 
         // Grab the 5 most recent posts
-        const postsArr = data.data.slice(0, 5);
+//      const postsArr = data.data.slice(0, 5);
 
         // Build HTML for each post
-        const html = postsArr.map(post => `
-            <h2>${post.caption ? post.caption.split('\n')[0] : 'No caption'}</h2>
-            <img src="${post.media_url}" alt="Instagram post">
-            <p>${post.caption || ''}</p>
-            <hr>
-        `).join('');
+//        const html = postsArr.map(post => `
+//            <h2>${post.caption ? post.caption.split('\n')[0] : 'No caption'}</h2>
+//           <img src="${post.media_url}" alt="Instagram post">
+//            <p>${post.caption || ''}</p>
+//            <hr>
+//        `).join('');
 
         // Insert into the page
-        posts.innerHTML = html;
+//        posts.innerHTML = html;
 
         // For debugging: see the full API response
-        console.log(data);
-    })
-    .catch(err => {
-        console.error("Fetch error:", err);
-        posts.innerHTML = "<p>Failed to load posts.</p>";
-    });
+//        console.log(data);
+//    })
+//    .catch(err => {
+//        console.error("Fetch error:", err);
+//        posts.innerHTML = "<p>Failed to load posts.</p>";
+//    });
 
 //----------------------------------------------------------------------------------------
