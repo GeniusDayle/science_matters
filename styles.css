@@ -941,6 +941,7 @@
         /* Grid Settings */
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
+        gap: 0 4rem;
         /*---------------------------------*/
 
     }
@@ -982,6 +983,7 @@
         /*---------------------------------*/
 
     }
+
 }
 
 @media (min-width:1500px) {
@@ -989,6 +991,25 @@
 
         /* Layout Settings */
         object-position: center calc(100% +16rem)
+        /*---------------------------------*/
+
+    }
+
+    .about-us-grid {
+
+        /* Grid Settings */
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        /*---------------------------------*/
+
+    }
+
+    .team-grid {
+
+        /* Grid Settings */
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 4rem;
         /*---------------------------------*/
 
     }
