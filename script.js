@@ -1,3 +1,4 @@
+// Global Declarations ------------------------------------------------------------------
 
     const modalContent = document.querySelector('.modal-content')
     const modal = document.querySelector('.modal');
