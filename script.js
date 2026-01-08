@@ -12,6 +12,8 @@
     const navMenu = document.getElementById('hamburger-menu');
     const menuItems = navMenu.querySelectorAll('a');
     const savedTheme = localStorage.getItem('theme');
+    const viewMore = document.getElementById('view-more');
+    const viewMoreBtn = document.getElementById('view-more-btn');
     
     // Light Mode Style Changes
     lightBtn.forEach(btn => {
@@ -27,6 +29,7 @@
             localStorage.setItem('theme', 'light');
             modalContent.style.background = 'whitesmoke';
             modalContent.style.color = '#343a40';
+            viewMoreBtn.style.color = '#343a40';
         });
     });
 
@@ -44,6 +47,7 @@
             localStorage.setItem('theme', 'dark');
             modalContent.style.background = '#343a40';
             modalContent.style.color = 'whitesmoke';
+            viewMoreBtn.style.color = 'whitesmoke';
         });
     });
 
@@ -172,7 +176,6 @@
 
     // View more function
     const grid = document.getElementById('team-grid')
-    const viewMore = document.getElementById('view-more');
 
     viewMore.addEventListener('click', () => {
         grid.classList.toggle("show-all");

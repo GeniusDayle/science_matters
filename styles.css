@@ -258,12 +258,40 @@
         padding-top: 7px;
         /*---------------------------------*/
 
+        /* Extra Settings */
+        transition: transform 0.3s ease-in-out;
+        /*---------------------------------*/
+
     }
 
     .light-btn {
 
         /* Extra Styling */
         text-shadow: 0 0 10px #fbd116, 0 0 20px #fbd116;
+        /*---------------------------------*/
+
+    }
+
+    .menu-btn {
+
+        /* Extra Settings */
+        transition: transform 0.3s ease-in-out; 
+        /*---------------------------------*/
+
+    }
+
+    .light-btn:hover, .dark-btn:hover {
+
+        /* Extra Settings */
+        transform: scale(1.15);
+        /*---------------------------------*/
+
+    }
+
+    .menu-btn:hover {
+
+        /* Extra Settings */
+        transform: scale(1.1); 
         /*---------------------------------*/
 
     }
@@ -309,6 +337,18 @@
         /* Layout Settings */
         margin: 0 auto;
         padding: 0.5rem 0;   
+        /*---------------------------------*/
+
+        /* Extra Settings */
+        transition: transform 0.3s ease-in-out; 
+        /*---------------------------------*/
+
+    }
+
+    .side-menu-items li:hover {
+
+        /* Extra Settings */
+        transform: scale(1.1); 
         /*---------------------------------*/
 
     }
@@ -385,6 +425,22 @@
         /* Layout Settings */
         margin: 0;
         padding: 0;
+        /*---------------------------------*/
+
+    }
+
+    .hamburger-menu ul li {
+
+        /* Extra Settings */
+        transition: transform 0.3s ease-in-out; 
+        /*---------------------------------*/
+
+    }
+
+    .hamburger-menu ul li:hover {
+
+        /* Extra Settings */
+        transform: scale(1.1); 
         /*---------------------------------*/
 
     }
@@ -520,6 +576,22 @@
         display: block;
         /*---------------------------------*/
 
+    }
+
+    .team-member h2 {
+
+        /* Font Settinmgs */
+        font-size: 1.25rem;
+        /*---------------------------------*/
+        
+    }
+
+    .team-member h3 {
+
+        /* Font Settinmgs */
+        font-size: 1rem;
+        /*---------------------------------*/
+        
     }
 
     .team-member p {
@@ -667,18 +739,6 @@
         border: none;
         /*---------------------------------*/
 
-        /* Extra Settings */
-        transition: transform 0.5s ease-in-out;
-        /*---------------------------------*/
-
-    }
-
-    .view-more button:hover {
-
-        /* Extra Settings */
-        transform: scale(1.1);
-        /*---------------------------------*/
-
     }
 
 /* ----------------------------------------------------------------------- */
@@ -755,6 +815,7 @@
 
         /* Color Settings */
         background: #0d9859;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3), 0 0 25px rgba(0, 0, 0, 0.2);
         /*---------------------------------*/
 
     }
@@ -762,7 +823,7 @@
     .donate-btn:hover, .donate-btn:active {
 
         /* Color Settings */
-        background: #134611;
+        background: #07bd68;
         /*---------------------------------*/
         
     }
@@ -831,6 +892,18 @@
         /* Font Settings */
         font-size: 1.75rem;
         text-decoration: none;
+        /*---------------------------------*/
+
+        /* Extra Settings */
+        transition: transform 0.3s ease-in-out;
+        /*---------------------------------*/
+
+    }
+
+    .links a:hover {
+
+        /* Extra Settings */
+        transform: scale(1.1);
         /*---------------------------------*/
 
     }
@@ -1035,16 +1108,8 @@
     .team-grid {
 
         /* Grid Settings */
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 2rem;
-        /*---------------------------------*/
-
-    }
-
-    .team-grid .team-member:nth-child(n + 4) {
-
-        /* Layout Settings */
-        display: none;
         /*---------------------------------*/
 
     }
@@ -1107,12 +1172,20 @@
 
     }
 
-    .team-grid .team-member:nth-child(n + 5) {
+    .team-member h2 {
 
-        /* Layout Settings */
-        display: none;
+        /* Font Settinmgs */
+        font-size: 1.75rem;
         /*---------------------------------*/
 
+    }
+
+    .team-member h3 {
+
+        /* Font Settinmgs */
+        font-size: 1.3rem;
+        /*---------------------------------*/
+        
     }
 
 }
