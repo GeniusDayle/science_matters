@@ -493,6 +493,7 @@
         /* Extra Settings */
         cursor: pointer;
         -webkit-tap-highlight-color: transparent;
+        transition: background-color 0.5s ease;
         /*---------------------------------*/
 
     }
@@ -500,7 +501,23 @@
     .team-member img:hover, .team-member img:active {
         
         /* Color Settings */
-        background: #d3d3d3;
+        background-color: #d3d3d3;
+        /*---------------------------------*/
+
+    }
+
+    .team-grid .team-member:nth-child(n + 5) {
+
+        /* Layout Settings */
+        display: none;
+        /*---------------------------------*/
+
+    }
+
+    .team-grid.show-all .team-member:nth-child(n + 5) {
+
+        /* Layout Settings */
+        display: block;
         /*---------------------------------*/
 
     }
@@ -618,6 +635,32 @@
         margin: 1rem auto 0 auto;
         /*---------------------------------*/
         
+    }
+
+    .view-more {
+
+        /* Layout Settings */
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+        /*---------------------------------*/
+
+        /* Extra Settings */
+        cursor: pointer;
+        /*---------------------------------*/
+
+    }
+
+    .view-more p {
+
+        /* Text Settings */
+        font-weight: 500;
+        /*---------------------------------*/
+
+        /* Border Settings */
+        border: none;
+        /*---------------------------------*/
+
     }
 
 /* ----------------------------------------------------------------------- */
@@ -747,6 +790,31 @@
         border: none;
         /*---------------------------------*/
         
+    }
+
+    .links {
+
+        /* Layout Settings */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem 0;
+        gap: 2rem;
+        /*---------------------------------*/
+
+    }
+
+    .links a {
+
+        /* Color Settings */
+        color: whitesmoke;
+        /*---------------------------------*/
+
+        /* Font Settings */
+        font-size: 1.75rem;
+        text-decoration: none;
+        /*---------------------------------*/
+
     }
 
 /* ----------------------------------------------------------------------- */

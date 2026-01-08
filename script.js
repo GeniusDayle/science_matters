@@ -170,6 +170,20 @@
         if (e.key === 'Escape') closeModal();
     });
 
+    // View more function
+    const grid = document.getElementById('team-grid')
+    const viewMore = document.getElementById('view-more');
+
+    viewMore.addEventListener('click', () => {
+        grid.classList.toggle("show-all");
+
+        if (grid.classList.contains("show-all")) {
+            viewMore.textContent = "View Less";
+        } else {
+            viewMore.textContent = "View More";
+        }
+    });
+
 // ---------------------------------------------------------------------------------------
 
 // Picture Slideshow ---------------------------------------------------------------------
