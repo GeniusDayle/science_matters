@@ -493,7 +493,7 @@
         /* Extra Settings */
         cursor: pointer;
         -webkit-tap-highlight-color: transparent;
-        transition: background-color 0.5s ease;
+        transition: background-color 0.5s ease-in-out;
         /*---------------------------------*/
 
     }
@@ -651,14 +651,32 @@
 
     }
 
-    .view-more p {
+    .view-more button {
+
+        /* Color Settings */
+        background: none;
+        color: #343a40;
+        /*---------------------------------*/
 
         /* Text Settings */
+        font-size: 1.1rem;
         font-weight: 500;
         /*---------------------------------*/
 
         /* Border Settings */
         border: none;
+        /*---------------------------------*/
+
+        /* Extra Settings */
+        transition: transform 0.5s ease-in-out;
+        /*---------------------------------*/
+
+    }
+
+    .view-more button:hover {
+
+        /* Extra Settings */
+        transform: scale(1.1);
         /*---------------------------------*/
 
     }
@@ -1017,9 +1035,16 @@
     .team-grid {
 
         /* Grid Settings */
-        display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 2rem;
+        /*---------------------------------*/
+
+    }
+
+    .team-grid .team-member:nth-child(n + 4) {
+
+        /* Layout Settings */
+        display: none;
         /*---------------------------------*/
 
     }
@@ -1058,7 +1083,7 @@
     .background-vid {
 
         /* Layout Settings */
-        object-position: center calc(100% +16rem)
+        object-position: center calc(100% +16rem);
         /*---------------------------------*/
 
     }
@@ -1081,6 +1106,15 @@
         /*---------------------------------*/
 
     }
+
+    .team-grid .team-member:nth-child(n + 5) {
+
+        /* Layout Settings */
+        display: none;
+        /*---------------------------------*/
+
+    }
+
 }
 
 /* ----------------------------------------------------------------------- */

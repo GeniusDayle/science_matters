@@ -181,6 +181,10 @@
             viewMore.textContent = "View Less";
         } else {
             viewMore.textContent = "View More";
+
+            const teamSection = document.getElementById('team');
+
+            teamSection.scrollIntoView({});
         }
     });
 
