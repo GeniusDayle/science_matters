@@ -1,0 +1,16 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  padding: 1rem 0;
+  background: #283593;
+  color: whitesmoke;
+  border-top: 4px solid #ce1126;
+}
+
+footer p { margin: 0.5rem 0; padding: 0; border: none; }
+.links { display: flex; justify-content: center; align-items: center; margin: 1rem 0; gap: 2rem; }
+.links a { color: whitesmoke; font-size: 1.75rem; text-decoration: none; transition: transform 0.3s ease-in-out; }
+.links a:hover { transform: scale(1.1); }

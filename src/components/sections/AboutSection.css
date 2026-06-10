@@ -1,0 +1,8 @@
+.about-us-grid { display: grid; gap: 1rem; }
+.about-us-grid img { max-width: 100%; }
+.objectives { margin-bottom: 0; padding-bottom: 0; }
+.objectives ul { padding: 1.2rem; padding-bottom: 0; }
+
+@media (min-width: 1500px) {
+  .about-us-grid { grid-template-columns: 1fr 1fr 1fr; grid-template-rows: auto; }
+}

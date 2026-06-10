@@ -1,0 +1,5 @@
+.donate-info { display: flex; flex-direction: column; align-items: center; }
+.donate-info h2 { align-self: flex-start; }
+.donate-info p { padding-left: 2rem; border-left: 4px solid #fbd116; }
+.donate-btn { padding: 1rem 2rem; background: #0d9859; text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3), 0 0 25px rgba(0, 0, 0, 0.2); }
+.donate-btn:hover, .donate-btn:active { background: #07bd68; }
