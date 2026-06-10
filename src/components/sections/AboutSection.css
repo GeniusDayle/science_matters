@@ -1,7 +1,35 @@
-.about-us-grid { display: grid; gap: 1rem; }
-.about-us-grid img { max-width: 100%; }
-.objectives { margin-bottom: 0; padding-bottom: 0; }
-.objectives ul { padding: 1.2rem; padding-bottom: 0; }
+.about-us-menu { 
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.about-us-grid img { 
+  max-width: 100%; 
+}
+
+.objectives { 
+  margin-bottom: 0; padding-bottom: 0; 
+}
+
+.objectives ul { 
+  padding: 1.2rem; padding-bottom: 0; 
+}
+
+.about-us-btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #283593;
+  color: white;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.about-us-btn:active, .about-us-btn:hover {
+  background-color: #0075f3;
+}
 
 @media (min-width: 1500px) {
   .about-us-grid { grid-template-columns: 1fr 1fr 1fr; grid-template-rows: auto; }

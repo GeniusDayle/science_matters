@@ -15,7 +15,7 @@ export default function AboutSection() {
         <button type="button" className={`about-us-btn ${about === 'mission' ? 'active' : ''}`} role="tab" aria-selected={about === 'mission'} onClick={() => setAbout('mission')}>Mission</button>
         <button type="button" className={`about-us-btn ${about === 'objectives' ? 'active' : ''}`} role="tab" aria-selected={about === 'objectives'} onClick={() => setAbout('objectives')}>Objectives</button>
       </div>
-      <div className="about-us-grid" id="about-us-grid">
+      <div className="about-us-info" id="about-us-info">
         {about === 'vision' && <Vision />}
         {about === 'mission' && <Mission />}
         {about === 'objectives' && <Objectives />}
