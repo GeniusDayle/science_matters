@@ -31,6 +31,29 @@
   background-color: #0075f3;
 }
 
+.about-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.about-info p {
+  height: fit-content;
+}
+
+@media (min-width: 800px) {
+  .about-info { 
+    flex-direction: row; 
+    gap: 2rem; 
+  }
+  .about-info img { 
+    width: 50%; 
+  }
+}
+
 @media (min-width: 1500px) {
   .about-us-grid { grid-template-columns: 1fr 1fr 1fr; grid-template-rows: auto; }
 }
+
+@media (min-width: 1800px) {
+  .about-us-btn { font-size: 1.2rem; padding: 0.75rem 1.5rem; }

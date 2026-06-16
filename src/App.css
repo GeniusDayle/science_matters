@@ -124,6 +124,10 @@ header {
   .logo img { width: 280px; height: 280px; }
   .btn-bar { display: none; }
   main { width: 85%; }
+  section {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -135,6 +139,10 @@ header {
   h2 { font-size: 2rem; }
   p, li { font-size: 1.2rem; }
   main { width: 80%; }
+  section {
+    width: 70%;
+    margin: 0 auto;
+  }
 }
 
 @media (min-width: 1280px) {

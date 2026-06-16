@@ -5,7 +5,7 @@ footer {
   align-items: center;
   margin-top: 0;
   padding: 1rem 0;
-  background: #283593;
+  background: radial-gradient(circle, #050f97, #283593);  ;
   color: whitesmoke;
   border-top: 4px solid #ce1126;
 }
