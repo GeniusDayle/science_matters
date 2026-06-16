@@ -4,10 +4,6 @@
   gap: 1rem;
 }
 
-.about-us-grid img { 
-  max-width: 100%; 
-}
-
 .objectives { 
   margin-bottom: 0; padding-bottom: 0; 
 }
@@ -41,7 +37,11 @@
   height: fit-content;
 }
 
-@media (min-width: 800px) {
+.about-info img {
+  height: 100%;
+}
+
+@media (min-width: 700px) {
   .about-info { 
     flex-direction: row; 
     gap: 2rem; 
@@ -57,3 +57,4 @@
 
 @media (min-width: 1800px) {
   .about-us-btn { font-size: 1.2rem; padding: 0.75rem 1.5rem; }
+}

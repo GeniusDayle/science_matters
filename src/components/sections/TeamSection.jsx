@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react'
 import './TeamSection.css'
-import teamImg from '../../assets/images/corvell-cranfield.png'
+import teamImg from '../../assets/images/placeholder.png'
 
 const teamMembers = Array.from({ length: 8 }, (_, index) => ({
-  name: `Corvell Cranfield ${index + 1}`,
-  role: 'Education Coordinator',
+  name: `Person ${index + 1}`,
+  role: 'Role',
   image: teamImg,
   blurb: `${index + 1} Ipsum lorem dolor sit amet consectetur adipisicing elit. Minima autem temporibus!`,
 }))
